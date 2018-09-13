@@ -133,9 +133,10 @@ class DoublyLinkedList{
       prevNode = currentNode; // updates the prev node as the current node
       currentNode = nextNode; // updates the current node as the next node
     }
-    this.tail = this.head;
-    this.head = currentNode;
-    return list;
+    let temp = this.head;
+    this.head = this.tail;
+    this.tail = temp;
+    return this;
   }
 }
 

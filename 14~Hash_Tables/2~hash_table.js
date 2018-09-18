@@ -47,8 +47,8 @@ class HashTable {
     for (let i = 0; i < map.length; i++) {
       if(map[i]) {
         for(let j = 0; j < map[i].length; j++) {
-          if(!keysArr.includes(map[i][j][1])) { // if the totalling array doesn't include the current map
-            keysArr.push(map[i][j][1]) // push it into the array
+          if(!keysArr.includes(map[i][j][0])) { // if the totalling array doesn't include the current map (slow implementation)
+            keysArr.push(map[i][j][0]) // push it into the array
           }
         }
       }

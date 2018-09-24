@@ -13,7 +13,7 @@ const maxSubarraySum = (arr, windowLength) => {
   max = temp;
 
   for(let i = windowLength; i < arr.length; i++) {
-    temp = temp -arr[i - windowLength] + arr[i];
+    temp = temp - arr[i - windowLength] + arr[i];
     if(temp > max) {
       max = temp;
     }
